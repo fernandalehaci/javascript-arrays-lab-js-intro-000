@@ -18,8 +18,10 @@ function destructivelyRemoveFirstKitten(){
   return kittens
 }
 function appendKitten(name){
-  var newKittens=[...kittens, name]
-  return newKittens
+  return kittens.concat(name)
+  //or
+  //var newKittens=[...kittens, name]
+  //return newKittens
 }
 function prependKitten(name){
   var prependKittens=[name, ...kittens]
