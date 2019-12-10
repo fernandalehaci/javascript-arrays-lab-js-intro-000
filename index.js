@@ -24,10 +24,9 @@ function appendKitten(name){
   //return newKittens
 }
 function prependKitten(name){
-  return name.concat(kittens)
-  //or:
-  //var prependKittens=[name, ...kittens]
-  //return prependKittens
+
+  var prependKittens=[name, ...kittens]
+  return prependKittens
 }
 function removeLastKitten(){
   var removeLast= kittens.slice(0,kittens.length-1) //keep these indexes slice here (0,2)
