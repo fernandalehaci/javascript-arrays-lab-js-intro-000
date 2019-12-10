@@ -19,13 +19,15 @@ function destructivelyRemoveFirstKitten(){
 }
 function appendKitten(name){
   return kittens.concat(name)
-  //or
+  //or:
   //var newKittens=[...kittens, name]
   //return newKittens
 }
 function prependKitten(name){
-  var prependKittens=[name, ...kittens]
-  return prependKittens
+  return name.concat(kittens)
+  //or:
+  //var prependKittens=[name, ...kittens]
+  //return prependKittens
 }
 function removeLastKitten(){
   var removeLast= kittens.slice(0,kittens.length-1) //keep these indexes slice here (0,2)
